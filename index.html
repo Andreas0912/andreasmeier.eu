@@ -1,188 +1,235 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balkonsanierung & Reparatur Service</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --primary: #1f2933;
-      --accent: #10b981;
-      --bg: #f9fafb;
-      --card: #ffffff;
-    }
+<title>Andreas Meier Abdichtungstechnik</title>
+<meta name="description" content="Balkonsanierung und Flüssigkunststoff-Abdichtung. Über 15 Jahre Erfahrung. Einsatz bis 150 km rund um Simmern.">
 
-    * {
-      box-sizing: border-box;
-    }
+<style>
+:root{
+--primary:#1f2933;
+--accent:#0b5fa5;
+--bg:#f5f7fa;
+--card:#ffffff;
+}
 
-    body {
-      margin: 0;
-      font-family: "Inter", Arial, sans-serif;
-      background: var(--bg);
-      color: #333;
-      line-height: 1.6;
-    }
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:var(--bg);
+color:#333;
+line-height:1.6;
+}
 
-    header {
-      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("https://images.unsplash.com/photo-1581579186988-449b32a5c6b1");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
+header{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55));
+color:white;
+padding:3rem 1.5rem;
+text-align:center;
+}
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
+header img{
+max-width:260px;
+margin-bottom:1.5rem;
+}
 
-    header p {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-    }
+header h1{
+margin:0;
+font-size:2.3rem;
+}
 
-    main {
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-    }
+header p{
+max-width:700px;
+margin:1rem auto 0;
+font-size:1.1rem;
+}
 
-    section {
-      margin-bottom: 4rem;
-    }
+main{
+max-width:1100px;
+margin:3rem auto;
+padding:0 1.5rem;
+}
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.2rem;
-      color: var(--primary);
-    }
+section{
+margin-bottom:4rem;
+}
 
-    .card {
-      background: var(--card);
-      padding: 2rem;
-      border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
+h2{
+font-size:1.8rem;
+margin-bottom:1.2rem;
+color:var(--primary);
+}
 
-    .services ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 0;
-      list-style: none;
-    }
+.card{
+background:var(--card);
+padding:2rem;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
 
-    .services li {
-      background: #f1f5f9;
-      padding: 1.2rem;
-      border-radius: 10px;
-      font-weight: 500;
-    }
+.services ul{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:1rem;
+list-style:none;
+padding:0;
+}
 
-    /* Galerie */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.2rem;
-    }
+.services li{
+background:#eef2f6;
+padding:1.2rem;
+border-radius:10px;
+font-weight:500;
+}
 
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:1.2rem;
+}
 
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+.gallery img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:12px;
+}
 
-    .cta {
-      background: var(--accent);
-      color: white;
-      padding: 3rem 2rem;
-      border-radius: 18px;
-      text-align: center;
-    }
+.cta{
+background:var(--accent);
+color:white;
+padding:3rem 2rem;
+border-radius:18px;
+text-align:center;
+}
 
-    .cta a {
-      display: inline-block;
-      margin-top: 1.2rem;
-      padding: 0.9rem 1.8rem;
-      background: white;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-    }
+.cta a{
+display:inline-block;
+margin:0.5rem;
+padding:1rem 1.8rem;
+background:white;
+color:var(--accent);
+text-decoration:none;
+font-weight:bold;
+border-radius:999px;
+}
 
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:2rem 1rem;
+font-size:0.95rem;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <img src="logo.png" alt="Andreas Meier Abdichtungstechnik Logo" style="max-width:220px; margin-bottom:1.5rem;" />
-    <h1>Andreas Meier Abdichtungstechnik</h1>
-    <p>Moderne Balkonsanierung, Abdichtung & Reparaturservice – zuverlässig und fachgerecht</p>
-  </header>
+<header>
+<img src="logo.png" alt="Logo">
+<h1>Andreas Meier Abdichtungstechnik</h1>
+<p>
+Balkonsanierung & Flüssigkunststoff-Abdichtung vom Fachbetrieb.<br>
+Über 15 Jahre Erfahrung – Einsatz bis 150 km rund um Simmern (Hunsrück)
+</p>
+</header>
 
-  <main>
-    <section class="card">
-      <h2>Über uns</h2>
-      <p>
-        Wir sind ein erfahrenes Kleingewerbe für Balkonsanierung und Reparaturarbeiten.
-        Unser Anspruch: langlebige Lösungen, saubere Arbeit und zufriedene Kunden.
-      </p>
-    </section>
+<main>
 
-    <section class="services">
-      <h2>Unsere Leistungen</h2>
-      <ul>
-        <li>Balkonsanierung & Abdichtung</li>
-        <li>Reparatur von Rissen & Betonschäden</li>
-        <li>Bodenbeläge & Ausbesserungen</li>
-        <li>Geländer- & Instandsetzungsarbeiten</li>
-      </ul>
-    </section>
+<section class="card">
+<h2>Über uns</h2>
+<p>
+Wir sind spezialisiert auf die fachgerechte Sanierung und Abdichtung von Balkonen und Terrassen.
+Mit über 15 Jahren Erfahrung stehen wir für saubere Arbeit, langlebige Lösungen und zufriedene Kunden.
+</p>
+</section>
 
-    <section>
-      <h2>Galerie – Unsere Arbeiten</h2>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1597047084897-51e81819a499" alt="Balkonsanierung">
-        <img src="https://images.unsplash.com/photo-1560185008-5b4c07fce0f7" alt="Balkon Reparatur">
-        <img src="https://images.unsplash.com/photo-1581091870627-3b6c1f3c8d2b" alt="Handwerker Arbeit">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Sanierter Balkon">
-      </div>
-    </section>
+<section class="services">
+<h2>Unsere Leistungen</h2>
+<ul>
+<li>Balkonsanierung komplett</li>
+<li>Flüssigkunststoff Abdichtung</li>
+<li>Terrassensanierung</li>
+<li>Feinsteinzeugplatten verlegen</li>
+<li>Abdichtung von Außenflächen</li>
+</ul>
+</section>
 
-    <section class="cta">
-      <h2>Kostenlose Anfrage</h2>
-      <p>Kontaktieren Sie uns für eine unverbindliche Beratung.</p>
-      <a href="mailto:ihre-email@beispiel.de">Jetzt Kontakt aufnehmen</a>
-    </section>
-  </main>
+<section>
+<h2>Unsere Arbeiten</h2>
+<div class="gallery">
+<img src="balkon1.jpg">
+<img src="balkon2.jpg">
+<img src="balkon3.jpg">
+<img src="balkon4.jpg">
+<img src="balkon5.jpg">
+<img src="balkon6.jpg">
+</div>
+</section>
 
-  <footer>
-    <p>© 2026 Balkonsanierung & Reparatur Service</p>
-  </footer>
+<section class="cta">
+<h2>Kostenlose Anfrage</h2>
+<p>Rufen Sie uns direkt an oder schreiben Sie eine E-Mail.</p>
+
+<a href="tel:015781516523">📞 Anrufen</a>
+<a href="mailto:andreas0912@hotmail.de">✉️ E-Mail senden</a>
+</section>
+
+<section class="card">
+<h2>Impressum</h2>
+
+<p><strong>Angaben gemäß § 5 TMG</strong></p>
+
+<p>
+Andreas Meier Abdichtungstechnik<br>
+Inhaber: Andreas Meier<br>
+Richard Oertel Str. 6<br>
+55469 Simmern (Hunsrück)<br>
+Deutschland
+</p>
+
+<p>
+<strong>Kontakt:</strong><br>
+Telefon: 015781516523<br>
+E-Mail: andreas0912@hotmail.de
+</p>
+
+<p>
+<strong>Umsatzsteuer:</strong><br>
+Kleingewerbe gemäß § 19 UStG – es wird keine Umsatzsteuer ausgewiesen.
+</p>
+
+<p>
+<strong>Verantwortlich für den Inhalt nach § 55 RStV:</strong><br>
+Andreas Meier<br>
+Richard Oertel Str. 6<br>
+55469 Simmern (Hunsrück)
+</p>
+</section>
+
+<section class="card">
+<h2>Datenschutz</h2>
+<p>
+Diese Website speichert keine personenbezogenen Daten. Es werden keine Cookies gesetzt und keine Tracking-Dienste verwendet.
+</p>
+
+<p>
+Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben nur zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.
+</p>
+</section>
+
+</main>
+
+<footer>
+<p>
+© 2026 Andreas Meier Abdichtungstechnik<br>
+Richard Oertel Str. 6 · 55469 Simmern (Hunsrück)<br>
+Tel: 015781516523
+</p>
+</footer>
 
 </body>
 </html>
